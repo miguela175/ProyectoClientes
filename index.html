@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Matrices</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="contenedores">
+    <h1>Calculadora de Matrices</h1>
+
+    <label for="matrix-tamano">Tamaño de matriz (n):</label>
+    <input type="numero" id="matrix-tamano" min="2" max="10" value="3" />
+
+    <div class="matrices">
+      <div>
+        <h2>Matriz A</h2>
+        <div id="matrix-A" class="matrix-cuadro"></div>
+      </div>
+      <div>
+        <h2>Matriz B</h2>
+        <div id="matrix-B" class="matrix-cuadro"></div>
+      </div>
+    </div>
+
+    <div class="controles">
+      <button onclick="generarMatrices()">Generar</button>
+    </div>
+
+    <div class ="operaciones">  
+        <button onclick="sumarMatrices()">Sumar (A + B)</button>
+        <button onclick="restarMatrices()">Restar (A - B)</button>
+        <button onclick="multiplicarMatrices()">Multiplicar (A × B)</button>
+        </button>
+    </div>
+
+    <div id="resultado" class="resultado-area"></div>
+  </div>
