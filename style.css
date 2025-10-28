@@ -1,0 +1,107 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+.contenedores {
+  max-width: 900px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+
+label {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+input[type="number"] {
+  display: block;
+  margin: 0 auto 15px auto;
+  padding: 8px;
+  width: 80px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.matrices {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.matriz-cuadro {
+  display: grid;
+  gap: 5px;
+}
+
+.matrix-cuadro input {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  background-color: #ecf0f1;
+}
+
+
+.controles, .operaciones {
+  text-align: center;
+  margin: 15px 0;
+}
+
+button {
+  margin: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+
+.resultado-area {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #3498db;
+  border-radius: 5px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  color: #2c3e50;
+}
