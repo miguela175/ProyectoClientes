@@ -10,36 +10,35 @@
   <div class="contenedores">
     <h1>Calculadora de Matrices</h1>
 
-    <label for="matrix-tamano">Tamaño de matriz (n):</label>
-    <input type="numero" id="matrix-tamano" min="2" max="10" value="3" />
+  <label for="tamano-matriz">Tamaño de matriz (n):</label>
+  <input type="number" id="tamano-matriz" min="2" max="10" value="3" />
 
     <div class="matrices">
       <div>
         <h2>Matriz A</h2>
-        <div id="matrix-A" class="matrix-cuadro"></div>
+        <div id="matriz-A" class="matriz-cuadro"></div>
       </div>
       <div>
         <h2>Matriz B</h2>
-        <div id="matrix-B" class="matrix-cuadro"></div>
+        <div id="matriz-B" class="matriz-cuadro"></div>
       </div>
     </div>
 
     <div class="controles">
       <button onclick="generarMatrices()">Generar</button>
-      <button onclick="clearMatrices()">Limpiar</button>
+      <button onclick="limpiarMatrices()">Limpiar</button>
     </div>
 
-    <div class ="operaciones">  
-        <button onclick="sumarMatrices()">Sumar (A + B)</button>
-        <button onclick="restarMatrices()">Restar (A - B)</button>
-        <button onclick="multiplicarMatrices()">Multiplicar (A × B)</button>
-        <button onclick="scalarMultiply()">k × A</button>
-        <button onclick="transportarMatriz()">Transpuesta A</button>
-        <button onclick="calcularDeterminante()">Det(A)</button>
-        <button onclick="invertirMatriz()">A⁻¹</button>
-        <button onclick="generarIdentidad()">Identidad In</button>
-        </button>
-    </div>
+  <div class ="operaciones">  
+  <button onclick="sumarMatrices()">Sumar (A + B)</button>
+  <button onclick="restarMatrices()">Restar (A - B)</button>
+  <button onclick="multiplicarMatrices()">Multiplicar (A × B)</button>
+  <button onclick="multiplicarPorEscalar()">k × A</button>
+  <button onclick="transportarMatriz()">Transpuesta A</button>
+  <button onclick="calcularDeterminante()">Det(A)</button>
+  <button onclick="invertirMatriz()">A⁻¹</button>
+  <button onclick="generarIdentidad()">Identidad In</button>
+  </div>
 
     <div id="resultado" class="resultado-area"></div>
   </div>
